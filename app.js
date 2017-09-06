@@ -43,7 +43,7 @@ $.ajax({
     url: 'http://api.openweathermap.org/data/2.5/forecast?id=3028641&APPID=6785cd546578eff50319fa79ce8aaa05&units=metric',
     success: function (data) {
         console.log(data);
-        for (var i = 1; i < 8; ++i) {
+        for (var i = 0; i < 8; ++i) {
             $('#icone').append('<td class="bord fond'+i+'"><img alt="'+data.list[i].weather[0].description+'" src="http://openweathermap.org/img/w/' + data.list[i].weather[0].icon + '.png"></td>');
             $('#temp').append('<td class="bord fond'+i+'">'+ Math.floor(data.list[i].main.temp) + '°C</td>');
             $('#date').append('<td class="bord fond'+i+'">'+ data.list[i].dt_txt + '</td>');
