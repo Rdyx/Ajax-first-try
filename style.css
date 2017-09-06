@@ -1,0 +1,39 @@
+table {
+    border: 1px solid black;
+    box-shadow: 0px 0px 20px black;
+    background: linear-gradient(red, yellow);
+}
+
+.bord {
+    border-left: 1px solid black;
+}
+/* 
+.fond1 {
+    background-color: #FFFFFF;
+}
+.fond2 {
+    background-color: #D9D6FF;
+}
+.fond3 {
+    background-color: #AAA3FE;
+}
+.fond4 {
+    background-color: #877DFF;
+    color: white;
+}
+.fond5 {
+    background-color: #6659FE;
+    color: white;
+}
+.fond6 {
+    background-color: #3828FE;
+    color: white;
+}
+.fond7 {
+    background-color: #1400FF;
+    color: white;
+}
+.fond8 {
+    background-color: #988FFF;
+    color: white;
+} */
