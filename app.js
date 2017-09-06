@@ -44,10 +44,10 @@ $.ajax({
     success: function (data) {
         console.log(data);
         for (var i = 0; i < 8; i = i+2) {
-            $('#icone').append('<td class="bord fond'+i+'"><img alt="'+data.list[i].weather[0].description+'" src="http://openweathermap.org/img/w/' + data.list[i].weather[0].icon + '.png"></td>');
-            $('#temp').append('<td class="bord fond'+i+'">'+ Math.floor(data.list[i].main.temp) + '°C</td>');
-            $('#date').append('<td class="bord fond'+i+'">'+ data.list[i].dt_txt + '</td>');
-            $('#ville').append('<td class="bord fond'+i+'">'+ data.city.name + '</td>');
+            $('#icone').append('<td class="bord"><img alt="'+data.list[i].weather[0].description+'" src="http://openweathermap.org/img/w/' + data.list[i].weather[0].icon + '.png"></td>');
+            $('#temp').append('<td class="bord">'+ Math.floor(data.list[i].main.temp) + '°C</td>');
+            $('#date').append('<td class="bord">'+ data.list[i].dt_txt + '</td>');
+            $('#ville').append('<td class="bord">'+ data.city.name + '</td>');
             //<tr><td>" + data.city.name + '</td><td>' + data.city.country + '</td><td>' +  + '</td><td>' + Math.floor(data.list[i].main.temp) + '°C</td><td></td></tr>');
         }
     }
