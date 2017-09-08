@@ -66,7 +66,7 @@ $.ajax({
             $('#temp').append('<td class="bord">'+ Math.floor(data.list[i].main.temp) + '°C</td>');
             $('#date').append('<td class="bord">'+ data.list[i].dt_txt + '</td>');
             $('#ville').append('<td class="bord">'+ data.city.name + '</td>');
-            $('#wind').append('<td class="bord">Vent : '+ data.list[i].wind.speed + ' km/h <br>Direction :  ' + windDirection + '</td>')
+            $('#wind').append('<td class="bord">Vent : '+ Math.floor(data.list[i].wind.speed * 3.6) + ' km/h <br>Direction :  ' + windDirection + '</td>')
             //<tr><td>" + data.city.name + '</td><td>' + data.city.country + '</td><td>' +  + '</td><td>' + Math.floor(data.list[i].main.temp) + '°C</td><td></td></tr>');
         }
     }
