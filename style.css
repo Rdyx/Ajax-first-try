@@ -2,8 +2,14 @@ table {
     border: 1px solid black;
     box-shadow: 0px 0px 20px black;
     background: linear-gradient(to bottom right, #3048FE, #E3E6FF);
+    margin: 2.5% 0 2.5% 0;
 }
 
 .bord {
     border-left: 1px solid black;
+}
+
+button, input {
+    width: 250px;
+    margin-top: 1%;
 }
